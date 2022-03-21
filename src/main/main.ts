@@ -71,8 +71,8 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     show: false,
-    width: 1024,
-    height: 728,
+    fullscreen: true,
+    autoHideMenuBar: true,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -121,7 +121,6 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
-
 app
   .whenReady()
   .then(() => {

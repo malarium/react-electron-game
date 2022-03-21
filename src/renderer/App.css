@@ -2,6 +2,19 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
+
+@font-face {
+  font-family: 'VolkornRegular';
+  src: local('VolkornRegular'),
+    url('../../assets/Vollkorn_SC/VollkornSC-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'VolkornBold';
+  src: local('VolkornBold'),
+    url('../../assets/Vollkorn_SC/VollkornSC-Bold.ttf') format('truetype');
+  font-weight: 900;
+}
 body {
   position: relative;
   color: white;
@@ -12,7 +25,8 @@ body {
     #dd5789 51.77%,
     #7a2c9e 129.35%
   );
-  font-family: sans-serif;
+  font-family: 'VolkornBold';
+  font-size: 12vw;
   overflow-y: hidden;
   display: flex;
   justify-content: center;
