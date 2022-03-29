@@ -93,6 +93,11 @@ const configuration: webpack.Configuration = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      // Sounds
+      {
+        test: /\.(mp3|wav)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
