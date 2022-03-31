@@ -47,5 +47,13 @@ body {
   line-height: 1;
   opacity: 0;
   text-shadow: 20px 0px 15px grey;
+  position: relative;
   animation: fade-in 25s 3s forwards;
+}
+.main span {
+  position: absolute;
+  right: 10vw;
+  bottom: -12vh;
+  opacity: 0;
+  animation: fade-in 10s 15s forwards;
 }

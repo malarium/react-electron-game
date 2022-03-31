@@ -12,7 +12,7 @@ export const Hello = () => {
   useEffect(() => {
     const music = new Audio(introUrl);
     setTimeout(() => {
-      music.play();
+      // music.play();
     }, 2000);
 
     return () => {
@@ -22,6 +22,7 @@ export const Hello = () => {
   return (
     <div className="main">
       <h1>The Big&nbsp;&nbsp;Day</h1>
+      <span>&rarr;</span>
     </div>
   );
 };
