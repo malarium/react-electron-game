@@ -51,9 +51,11 @@ body {
   animation: fade-in 25s 3s forwards;
 }
 .main span {
+  display: inline;
   position: absolute;
   right: 10vw;
   bottom: -12vh;
   opacity: 0;
   animation: fade-in 10s 15s forwards;
+  cursor: pointer;
 }

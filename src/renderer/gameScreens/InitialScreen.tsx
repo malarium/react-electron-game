@@ -4,7 +4,9 @@ export const InitialScreen = () => {
   return (
     <>
       <div className="Title">Initial screen</div>
-      <Link to="/">BACK</Link>
+      <Link className="startGame" to="/">
+        BACK
+      </Link>
     </>
   );
 };
