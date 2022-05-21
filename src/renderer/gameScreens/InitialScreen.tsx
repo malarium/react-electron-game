@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './InitialScreen.scss';
 import kitchen from '../../../assets/images/kitchen.jpg';
 
@@ -15,6 +15,7 @@ export const countCoords = (coords: number[]) => {
 };
 
 export const InitialScreen = () => {
+  const navigate = useNavigate();
   return (
     <div className="hall">
       <img
@@ -30,6 +31,7 @@ export const InitialScreen = () => {
           coords={countCoords([48, 52, 61, 80])}
           alt="Computer"
           href="/"
+          onClick={() => navigate('/')}
         />
         {/* <area
           shape="rect"
