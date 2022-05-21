@@ -28,17 +28,11 @@ export const InitialScreen = () => {
       <map name="kitchen">
         <area
           shape="rect"
-          coords={countCoords([48, 52, 61, 80])}
+          coords={countCoords([48, 52, 60, 80])}
           alt="Computer"
           href="/"
           onClick={() => navigate('/')}
         />
-        {/* <area
-          shape="rect"
-          coords={countCoords([1, 20, 1, 20])}
-          alt="Computer"
-          href="/"
-        /> */}
       </map>
       {/* <Link className="startGame" to="/">
         BACK
